@@ -65,7 +65,7 @@ class ListOfCoins extends Component {
                                         <Card>
                                             <Row>
                                                 <Col>
-                                                    <Card.Img src={card.avers_img}
+                                                    <Card.Img src={require(coin.avers_img).default}
                                                         alt={'coin ' + card.avers_img} style={{ width: '50%' }} />
                                                 </Col>
                                                 <Col>

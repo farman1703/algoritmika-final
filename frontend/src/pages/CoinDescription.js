@@ -12,10 +12,10 @@ export default function CoinDescription() {
                 <Row className="justify-content-md-center">
                 <Col lg md='5'>
                 <Card>
-                    <Card.Img variant="top" src={coin.avers_img}
+                    <Card.Img variant="top" src={require(coin.avers_img).default}
                         alt="https://via.placeholder.com/100" style={{ width: '50%' }} />
                     <br></br>
-                    <Card.Img variant="bottom" src={coin.revers_img}
+                    <Card.Img variant="bottom" src={require(coin.revers_img).default}
                         alt="https://via.placeholder.com/100" style={{ width: '50%' }} />
                 </Card>
                 </Col>
